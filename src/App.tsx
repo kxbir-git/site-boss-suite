@@ -32,7 +32,7 @@ const App = () => (
           </Routes>
           <ContactFab />
         </BrowserRouter>
-      </TooltipProvider>
+      </BookingsProvider>
     </AuthProvider>
   </QueryClientProvider>
 );
