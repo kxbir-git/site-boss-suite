@@ -39,8 +39,7 @@ const EquipmentCard = ({ equipment }: { equipment: Equipment }) => {
         <h3 className="font-heading text-lg text-card-foreground mb-1">{equipment.name}</h3>
         <p className="text-muted-foreground text-sm mb-3 line-clamp-2">{equipment.description}</p>
         <p className="text-xs text-muted-foreground mb-4">{equipment.specs}</p>
-        <div className="flex items-center justify-between">
-          <span className="font-heading text-xl text-primary">₹{equipment.dailyRate}<span className="text-sm text-muted-foreground font-body">/day</span></span>
+        <div className="flex items-center justify-end">
           <Button
             size="sm"
             disabled={equipment.status !== "available"}
