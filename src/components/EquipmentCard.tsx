@@ -2,6 +2,7 @@ import { Equipment } from "@/data/equipment";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
+import { useBookings } from "@/contexts/BookingsContext";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
@@ -12,7 +13,8 @@ const statusColors: Record<string, string> = {
 };
 
 const EquipmentCard = ({ equipment }: { equipment: Equipment }) => {
-  const { isLoggedIn, role } = useAuth();
+  const { isLoggedIn, role, userName } = useAuth();
+  const { addBooking } = useBookings();
   const navigate = useNavigate();
 
   const handleRent = () => {
@@ -24,7 +26,8 @@ const EquipmentCard = ({ equipment }: { equipment: Equipment }) => {
       toast.info("Admins manage equipment, not rent.");
       return;
     }
-    toast.success(`Booking request sent for ${equipment.name}!`);
+    addBooking(equipment, userName);
+    toast.success(`Booking request sent for ${equipment.name}! Check your dashboard.`);
   };
 
   return (
