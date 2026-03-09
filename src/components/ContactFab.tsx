@@ -41,11 +41,11 @@ const ContactFab = () => {
           <div className="p-5 space-y-3">
             <div className="flex items-center gap-3 text-sm text-muted-foreground">
               <Phone className="h-4 w-4 text-primary" />
-              <span>+91 98765 43210</span>
+              <span>+91 83033 61848</span>
             </div>
             <div className="flex items-center gap-3 text-sm text-muted-foreground">
               <Mail className="h-4 w-4 text-primary" />
-              <span>info@equiprentpro.com</span>
+              <span>khanshoaib38989@gmail.com</span>
             </div>
 
             <div className="border-t border-border pt-3">
