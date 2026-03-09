@@ -27,9 +27,9 @@ const Footer = () => (
         <div>
           <h4 className="font-heading text-primary mb-4 text-lg">Contact</h4>
           <div className="space-y-2 text-sm text-muted-foreground">
-            <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 98765 43210</p>
-            <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> info@equiprentpro.com</p>
-            <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Mumbai, Maharashtra, India</p>
+            <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-primary" /> +91 83033 61848</p>
+            <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-primary" /> khanshoaib38989@gmail.com</p>
+            <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Chhatha Meel Sitapur Road Infront of Alliance, Lucknow, Uttarpradesh, India</p>
           </div>
         </div>
       </div>
