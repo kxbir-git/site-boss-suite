@@ -18,21 +18,22 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <AuthProvider>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/equipment" element={<EquipmentPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/admin" element={<AdminPage />} />
-            <Route path="/dashboard" element={<UserDashboard />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <ContactFab />
-        </BrowserRouter>
-      </TooltipProvider>
+      <BookingsProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/equipment" element={<EquipmentPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/admin" element={<AdminPage />} />
+              <Route path="/dashboard" element={<UserDashboard />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <ContactFab />
+          </BrowserRouter>
+        </TooltipProvider>
       </BookingsProvider>
     </AuthProvider>
   </QueryClientProvider>
